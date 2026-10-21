@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="A sarcastic handbook for serious goals, questionable timelines, and becoming the main character.">
+  <title>The Delusional Handbook — Get your life together-ish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The Delusional Handbook home">
+      <span class="brand-mark">▤</span><span><strong>THE DELUSIONAL HANDBOOK</strong><small>UNOFFICIAL GUIDE TO FIGURING IT OUT</small></span>
+    </a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#goals">Goals</a><a href="#money">Money</a><a href="#roadmap">Roadmap</a><a href="#progress">Progress</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <button class="button button-small button-outline" id="roastButton">Roast me ↗</button>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> VOL. 02 / FUTURE LEGEND, CURRENT WORK IN PROGRESS</div>
+        <h1>BIG DREAMS.<br><span class="accent">SERIOUS PLANS.</span><br>QUESTIONABLE EXECUTION.</h1>
+        <p class="hero-lede">A handbook for buying a car, earning real money, building a dream setup, and becoming the person who says <em>“it's a small expense”</em> without checking their bank balance first.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#goals">Begin the character arc <span>↘</span></a>
+          <button class="button button-ghost" id="wisdomButton">Generate wisdom ✳</button>
+        </div>
+        <div class="hero-meta"><span>STATUS: DELUSIONALLY OPTIMISTIC</span><span>LAST EXCUSE: 4 MIN AGO</span></div>
+      </div>
+      <aside class="hero-paper">
+        <div class="paper-top"><span>CONFIDENTIAL / LIFE PLAN</span><span class="stamp">APPROVED*</span></div>
+        <div class="paper-title">MISSION<br>STATUS</div>
+        <div class="paper-loading">LOADING<span class="loading-dots">...</span></div>
+        <ul class="paper-list">
+          <li><span class="tiny-check">✓</span> Get a great income</li>
+          <li><span class="tiny-check">✓</span> Buy a car that starts</li>
+          <li><span class="tiny-check">✓</span> Become financially stable</li>
+          <li><span class="tiny-check">?</span> Actually follow the plan</li>
+        </ul>
+        <div class="paper-foot">*Approved by absolutely nobody qualified.</div>
+        <span class="paper-scribble">trust the process ↗</span>
+      </aside>
+    </section>
+
+    <section class="stats-grid" aria-label="Dashboard summary">
+      <article class="stat-card"><span class="stat-icon">🎯</span><span class="stat-label">ACTIVE GOALS</span><strong id="statGoals">6</strong><small>Big plans, tiny steps.</small></article>
+      <article class="stat-card"><span class="stat-icon">₹</span><span class="stat-label">SAVINGS SO FAR</span><strong id="statSavings">₹0</strong><small>Your future self says thanks.</small></article>
+      <article class="stat-card"><span class="stat-icon">⚡</span><span class="stat-label">QUESTS COMPLETED</span><strong id="statDone">0</strong><small>Receipts, not just intentions.</small></article>
+      <article class="stat-card"><span class="stat-icon">👑</span><span class="stat-label">DELUSION LEVEL</span><strong id="statLevel">1</strong><small>Confidence remains untouched.</small></article>
+    </section>
+
+    <section class="section" id="goals">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 01 / THE MASTER PLAN</div><h2>The totally reasonable goals<span class="accent">.</span></h2></div><p>Ambition: unlimited.<br>Budget: under investigation.</p></div>
+      <div class="goal-grid" id="goalGrid">
+        <article class="goal-card"><span class="goal-number">GOAL_001</span><span class="goal-emoji">🚘</span><h3>Buy a car</h3><p>Step one: make money. Step two: buy car. Step three: discover petrol, insurance and maintenance are not optional DLC.</p><span class="tag">PETROL NOT INCLUDED</span></article>
+        <article class="goal-card"><span class="goal-number">GOAL_002</span><span class="goal-emoji">💸</span><h3>Get a great income</h3><p>Earn enough to live comfortably, help family, save, and buy something without opening 17 comparison tabs.</p><span class="tag">PAYDAY IS A LOVE LANGUAGE</span></article>
+        <article class="goal-card"><span class="goal-number">GOAL_003</span><span class="goal-emoji">🖥️</span><h3>Upgrade the setup</h3><p>Build a monster PC to gain +2 FPS, then spend four hours tweaking settings instead of playing.</p><span class="tag">RGB = PRODUCTIVITY</span></article>
+        <article class="goal-card"><span class="goal-number">GOAL_004</span><span class="goal-emoji">🏡</span><h3>Own a place</h3><p>A home with a proper room, peace and quiet, and no landlord text beginning with “Hi, just a reminder…”</p><span class="tag">RENT-FREE ARC</span></article>
+        <article class="goal-card"><span class="goal-number">GOAL_005</span><span class="goal-emoji">✈️</span><h3>Travel the world</h3><p>Visit wallpaper locations. Take 800 photos. Upload two. Come home and immediately miss the food.</p><span class="tag">PASSPORT OVERTHINKING</span></article>
+        <article class="goal-card"><span class="goal-number">GOAL_006</span><span class="goal-emoji">👑</span><h3>Make everyone proud</h3><p>Become successful, stay humble, and casually say “it's fine” when someone asks how much the car cost.</p><span class="tag">MAIN CHARACTER DLC</span></article>
+      </div>
+      <div class="add-goal-row"><div><strong>Got another wildly ambitious goal?</strong><small>Add it here. This is legally binding with absolutely no legal force.</small></div><button class="button button-outline" id="addGoalButton">＋ Add a goal</button></div>
+    </section>
+
+    <section class="section" id="money">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 02 / FINANCIAL FAN FICTION</div><h2>Money moves<span class="accent">.</span></h2></div><p>Manifestation is nice.<br>A spreadsheet is nicer.</p></div>
+      <div class="money-grid">
+        <article class="panel savings-panel">
+          <div class="panel-heading"><div><span class="mini-label">THE SAVINGS ARC</span><h3>Future car fund 🚗</h3></div><span class="pill">INR / ₹</span></div>
+          <p class="muted">Every rupee saved is one rupee your future self won't have to panic about. Deeply inconvenient, but true.</p>
+          <div class="money-inputs">
+            <label>Target amount (₹)<input id="savingsTarget" type="number" min="1" value="800000" inputmode="numeric"></label>
+            <label>Amount saved (₹)<input id="savingsCurrent" type="number" min="0" value="0" inputmode="numeric"></label>
+          </div>
+          <div class="savings-summary"><strong id="savingsPercent">0%</strong><span id="savingsRemaining">₹8,00,000 left. No pressure.</span></div>
+          <div class="progress-track"><span id="savingsBar"></span></div>
+          <div class="add-savings"><input id="savingsAdd" type="number" min="1" placeholder="Add savings, e.g. 500" aria-label="Amount to add"><button class="button button-primary" id="addSavingsButton">Add savings +</button></div>
+          <small class="fine-print">Saved in this browser on this device. Not a bank. Please do not deposit actual money into your screen.</small>
+        </article>
+        <article class="panel car-panel">
+          <div class="panel-heading"><div><span class="mini-label">REALITY CHECK CALCULATOR</span><h3>Can I afford the car?</h3></div><span class="car-icon">🚘</span></div>
+          <p class="muted">The sticker price is only the opening scene. Let's estimate the monthly damage.</p>
+          <label>Car price (₹)<input id="carPrice" type="number" min="0" value="1200000"></label>
+          <label>Down payment (₹)<input id="carDown" type="number" min="0" value="200000"></label>
+          <div class="money-inputs">
+            <label>Loan years<input id="loanYears" type="number" min="1" max="10" value="5"></label>
+            <label>Interest rate (%)<input id="loanRate" type="number" min="0" max="40" step=".1" value="9"></label>
+          </div>
+          <div class="car-result"><span>Estimated EMI / month</span><strong id="carEmi">₹20,760</strong><small id="carPrincipal">Loan amount: ₹10,00,000</small></div>
+          <p class="fine-print">Illustrative estimate only. Excludes fuel, insurance, maintenance, taxes and the emotional cost of a scratch.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 03 / TIME TRAVEL, SORT OF</div><h2>The roadmap (allegedly)<span class="accent">.</span></h2></div><p>Timeline subject to procrastination<br>and unexpected plot twists.</p></div>
+      <div class="roadmap">
+        <div class="roadmap-item"><div class="roadmap-year">2026</div><div class="roadmap-content"><span class="roadmap-dot"></span><h3>Get serious-ish</h3><p>Learn useful skills, finish small projects, and stop confusing watching tutorials with doing the thing.</p></div><span class="roadmap-status">IN PROGRESS*</span></div>
+        <div class="roadmap-item"><div class="roadmap-year">2027</div><div class="roadmap-content"><span class="roadmap-dot"></span><h3>Build the income</h3><p>Turn skills into work, work into money, and money into savings before it mysteriously becomes food delivery.</p></div><span class="roadmap-status">PLANNED IN NOTES</span></div>
+        <div class="roadmap-item"><div class="roadmap-year">2028</div><div class="roadmap-content"><span class="roadmap-dot"></span><h3>Enter the car era</h3><p>Compare 46 models, check ownership costs, and avoid choosing a car based entirely on its headlights.</p></div><span class="roadmap-status">MANIFESTING</span></div>
+        <div class="roadmap-item"><div class="roadmap-year">2029+</div><div class="roadmap-content"><span class="roadmap-dot"></span><h3>Financial freedom</h3><p>Emergency fund, sensible spending, long-term investing research, and the ability to relax without checking the balance.</p></div><span class="roadmap-status">BOSS LEVEL</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 04 / RECEIPTS OR IT DIDN'T HAPPEN</div><h2>Progress, allegedly<span class="accent">.</span></h2></div><p>Thinking about it does not count.<br>Adding it to Notes does not count either.</p></div>
+      <div class="progress-layout">
+        <article class="panel checklist-panel">
+          <div class="panel-heading"><div><span class="mini-label">WEEKLY QUESTS</span><h3>Do the actual thing</h3></div><span class="pill" id="questCount">0 / 6 done</span></div>
+          <div class="quest-list" id="questList">
+            <label class="quest"><input type="checkbox" data-quest="skill"><span class="custom-check"></span><span class="quest-copy"><strong>Learn one useful, monetisable skill</strong><small>Watching a video at 2× speed is not a skill.</small></span></label>
+            <label class="quest"><input type="checkbox" data-quest="save"><span class="custom-check"></span><span class="quest-copy"><strong>Save a real amount of money</strong><small>“Whatever is left” is not a savings strategy.</small></span></label>
+            <label class="quest"><input type="checkbox" data-quest="car"><span class="custom-check"></span><span class="quest-copy"><strong>Research the real cost of car ownership</strong><small>Petrol has entered the chat.</small></span></label>
+            <label class="quest"><input type="checkbox" data-quest="project"><span class="custom-check"></span><span class="quest-copy"><strong>Finish one project before starting another</strong><small>Your GitHub doesn't need another abandoned repository.</small></span></label>
+            <label class="quest"><input type="checkbox" data-quest="focus"><span class="custom-check"></span><span class="quest-copy"><strong>Complete one focused hour</strong><small>Phone away. Tabs closed. Character development.</small></span></label>
+            <label class="quest"><input type="checkbox" data-quest="review"><span class="custom-check"></span><span class="quest-copy"><strong>Review spending this week</strong><small>Be brave. Open the banking app.</small></span></label>
+          </div>
+        </article>
+        <article class="panel achievement-panel">
+          <div class="panel-heading"><div><span class="mini-label">ACHIEVEMENT SYSTEM</span><h3>Badges of questionable honour</h3></div>🏆</div>
+          <div class="achievement unlocked"><span>🌱</span><div><strong>Delusion: Level 1</strong><small>Have a dream. You have this one already.</small></div><b>UNLOCKED</b></div>
+          <div class="achievement" id="badgeFirst"><span>🧾</span><div><strong>Receipt Collector</strong><small>Complete your first weekly quest.</small></div><b>LOCKED</b></div>
+          <div class="achievement" id="badgeHalf"><span>🔥</span><div><strong>Actually Locking In</strong><small>Complete half of the weekly quests.</small></div><b>LOCKED</b></div>
+          <div class="achievement" id="badgeAll"><span>👑</span><div><strong>Rare Species</strong><small>Complete every weekly quest. Scientists are alerted.</small></div><b>LOCKED</b></div>
+          <div class="level-box"><div><span>YOUR DELUSION LEVEL</span><strong id="levelNumber">1</strong></div><div class="level-meter"><span id="levelBar"></span></div><small id="levelHint">Keep doing things to unlock a slightly fancier number.</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="excuses">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 05 / THE EXCUSE LAB</div><h2>Certified nonsense<span class="accent">.</span></h2></div><p>Unlimited excuses.<br>Zero resale value.</p></div>
+      <div class="excuse-grid">
+        <article class="paper-card">
+          <div class="paper-label">EXCUSE GENERATOR / RANDOMISED NONSENSE</div>
+          <h3>Today's premium excuse</h3>
+          <blockquote id="excuseText">“I'll start on Monday. This current week has bad energy.”</blockquote>
+          <div class="paper-bottom"><span id="excuseCount">EXCUSE #001 · CERTIFIED NONSENSE</span><button class="button button-dark" id="excuseButton">Generate another ↻</button></div>
+        </article>
+        <article class="panel motivation-panel">
+          <span class="mini-label">EMERGENCY MOTIVATION</span><div class="motivation-symbol">✳</div>
+          <blockquote id="motivationText">Your future self is either going to thank you or ask why you spent three hours watching “how to become disciplined” videos.</blockquote>
+          <div class="motivation-bottom"><span>SUPPLY: TEMPORARY</span><button class="button button-outline" id="motivateButton">Motivation +1</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section journal-section" id="journal">
+      <div class="section-heading"><div><div class="eyebrow">CHAPTER 06 / PROOF OF LIFE</div><h2>Daily log<span class="accent">.</span></h2></div><p>Write it down. Make a plan.<br>Then, in a shocking twist, do it.</p></div>
+      <div class="journal-grid">
+        <div class="panel journal-form">
+          <label for="journalEntry">What did you actually get done today?</label>
+          <textarea id="journalEntry" rows="4" maxlength="600" placeholder="Be honest. “Thought about being productive” is not a deliverable."></textarea>
+          <div class="journal-actions"><small id="journalDate"></small><button class="button button-primary" id="saveJournal">Save today's log</button></div>
+        </div>
+        <div class="panel journal-history"><div class="panel-heading"><h3>Recent receipts</h3><span class="pill" id="journalCount">0 entries</span></div><div id="journalEntries" class="journal-entries"><p class="empty-state">No receipts yet. The evidence locker is suspiciously empty.</p></div></div>
+      </div>
+    </section>
+
+    <section class="closing-banner"><div><span class="eyebrow">FINAL DISCLAIMER</span><h2>Stay delusional.<br><span class="accent">Do the work anyway.</span></h2><p>You don't need to become a billionaire this Tuesday. You just need to make today's version of you slightly less useless than yesterday's.</p></div><button class="button button-primary" id="closingButton">I shall attempt ↗</button></section>
+    <footer class="footer"><span>THE DELUSIONAL HANDBOOK © 2026 · VERSION 2.0</span><span>NO FINANCIAL ADVICE WAS HARMED IN THE MAKING OF THIS WEBSITE.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  </main>
+
+  <dialog id="goalDialog" class="modal">
+    <form method="dialog" id="goalForm">
+      <div class="modal-head"><div><span class="eyebrow">NEW SIDE QUEST</span><h2>Add a goal</h2></div><button class="icon-btn" value="cancel" aria-label="Close dialog">✕</button></div>
+      <label>Goal title<input id="newGoalTitle" required maxlength="55" placeholder="Become suspiciously successful"></label>
+      <label>What does success look like?<textarea id="newGoalDescription" rows="3" maxlength="180" placeholder="Explain the dream. Keep the excuses out."></textarea></label>
+      <label>Category<select id="newGoalCategory"><option>Money</option><option>Career</option><option>Car</option><option>Setup</option><option>Travel</option><option>Life</option></select></label>
+      <div class="modal-actions"><button class="button button-outline" value="cancel">Cancel (classic)</button><button class="button button-primary" id="submitGoal" value="default">Add goal</button></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/js/app.js"></script>
+</body>
+</html>
