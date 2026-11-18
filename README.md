@@ -1,39 +1,91 @@
-# The Delusional Handbook — v2.0
+<div align="center">
 
-A responsive, sarcastic personal-goals dashboard built with **Node.js, Express, HTML, CSS and vanilla JavaScript**.
+# The Delusional Handbook
+
+**A sarcastic personal-goals dashboard for people who have big dreams, serious plans, and questionable execution.**
+
+Built with Node.js, Express and vanilla JavaScript. No account, no database, no cloud sync — your data stays in your browser.
+
+[**Live demo →**](https://0tohero-ten.vercel.app) · [Report an issue](https://github.com/KION6969/0tohero/issues)
+
+</div>
+
+![The Delusional Handbook dashboard](docs/screenshot.png)
+
+## What this is
+
+The Delusional Handbook is a goals dashboard with a sense of humour. It tracks the things you keep saying you'll do — saving money, buying a car, building a skill, actually finishing a project — and wraps them in a dark editorial interface that is significantly more put-together than you are.
+
+Under the jokes it is a real tool: goals persist, savings update, calculators do the math, and the journal keeps a dated record.
 
 ## Features
-- Responsive dark/light theme
-- Sarcastic goals dashboard and custom goal creator
-- Savings tracker in Indian rupees with local persistence
-- Car EMI estimator (illustrative estimate)
+
+**Dashboard**
+- Active goals, savings, completed quests and a "delusion level" summary
+- Responsive dark/light theme, remembered between visits
+
+**Goals and progress**
+- Six seeded goals plus a custom goal creator
+- Progress tracking with per-goal updates
 - Weekly quest checklist and achievement badges
-- Random excuse generator, motivation generator and roast button
-- Daily journal with recent entries
-- Express server and `/api/health` endpoint
-- Uses browser localStorage for data; no database or account required
+- A roadmap with honest, mildly threatening status labels
 
-## Requirements
-- Node.js 18 or newer
-- Internet connection for Google Fonts (optional; the site still works without it)
+**Money (in Indian rupees)**
+- Savings tracker with target, percentage and remaining-amount math
+- Car EMI estimator
+- Rent-vs-time calculator
+- SIP corpus projector
+- Goal timeline calculator
+- All values formatted with `Intl.NumberFormat('en-IN')`
 
-## Run locally
-1. Extract the ZIP.
-2. Open a terminal in the extracted `delusional_handbook_pro` folder.
-3. Run:
+**Everything else**
+- Monthly calendar with custom events
+- Daily journal with a "recent receipts" history
+- Random excuse generator, wisdom button and a roast button
+- `/api/health` endpoint for uptime checks (yes, this site is monitored by [Pulse](https://github.com/KION6969/pulse-uptime))
 
-   ```bash
-   npm install
-   npm start
-   ```
+## Stack
 
-4. Open http://localhost:3000
+| Layer | Choice |
+| --- | --- |
+| Server | Node.js 18+, Express 4 |
+| Client | HTML, CSS, vanilla JavaScript — no build step |
+| Data | Browser `localStorage` |
+| Hosting | Vercel (Express served as a Node function) |
 
-## Useful URLs
-- Website: http://localhost:3000
-- Health check: http://localhost:3000/api/health
+## Run it locally
 
-## Notes
-- Progress is stored in this browser on this device using localStorage.
-- This version does not have a database, authentication, or cross-device sync.
-- The car EMI figure is an estimate and excludes fuel, insurance, maintenance, taxes, and other ownership costs.
+```bash
+git clone https://github.com/KION6969/0tohero.git
+cd 0tohero
+npm install
+npm start
+```
+
+Open **http://localhost:3000**. The server serves `public/` and provides the health check:
+
+```bash
+curl http://localhost:3000/api/health
+```
+
+## Project structure
+
+```
+server.js          Express server, static files and /api/health
+public/
+  index.html       the whole interface
+  css/style.css    design system, themes and responsive layouts
+  js/app.js        state, localStorage persistence, calculators, UI
+```
+
+There is no bundler and no framework. Edit `public/` and refresh.
+
+## Notes and limits
+
+- **Data is local.** Progress lives in `localStorage` for one browser on one device. Clearing site data deletes it. There is no account system or sync.
+- **Estimates are estimates.** EMI, rent and SIP figures are illustrative and exclude taxes, insurance, maintenance, fuel and other real-world costs. They are not financial advice.
+- **The jokes are the point.** The app is intentionally sarcastic. The goals still work.
+
+## License
+
+MIT © KION6969
