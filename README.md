@@ -6,6 +6,14 @@
 
 Built with Node.js, Express and vanilla JavaScript. No account, no database, no cloud sync — your data stays in your browser.
 
+<p>
+  <a href="https://github.com/KION6969/0tohero/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/KION6969/0tohero/actions/workflows/ci.yml/badge.svg" /></a>
+  <img alt="Express" src="https://img.shields.io/badge/express-4-000000?style=flat-square" />
+  <img alt="Vanilla JS" src="https://img.shields.io/badge/vanilla-js-f7df1e?style=flat-square" />
+  <img alt="LocalStorage" src="https://img.shields.io/badge/storage-localStorage-3ddc97?style=flat-square" />
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-6b7280?style=flat-square" />
+</p>
+
 [**Live demo →**](https://0tohero-ten.vercel.app) · [Report an issue](https://github.com/KION6969/0tohero/issues)
 
 </div>
